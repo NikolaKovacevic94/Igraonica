@@ -13,8 +13,6 @@ body{
 }
 
 
-
-
 /* header */
 header{
   background: #e8491d;
@@ -111,6 +109,9 @@ header li:hover{
 .container{
   margin-top: 40vh;
 }
+
+
+
 
 
 
@@ -310,14 +311,7 @@ header li:hover{
 }
 
 /* DEMO */
-body {
-  background: #rgba(178, 211, 192);
-  color: white;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  font-family: 'Roboto Mono';
-}
+
 
 
 .demo-btn {
@@ -336,6 +330,45 @@ body {
   background: rgba(0, 0, 0, 0.12);
 }
 
+
+
+/* footer */
+footer .foot{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  min-width: 80%;
+  padding: 2rem;
+  text-align: center;
+  font-size: 14px;
+  background: #e8491d;
+}
+
+footer .fa{
+  padding: 15px;
+  font-size: 25px;
+  color: rgba(178, 211, 192);
+}
+footer .fa:hover{
+  color: #21272b;
+  text-decoration: none;
+}
+
+footer p{
+  font-size: 1.1rem;
+  color: #21272b;
+}
+
+footer h2{
+  color: #21272b;
+}
+
+h4{
+  font-size: 2.3rem;
+  color: #e8491d;
+  margin-top: 80px;
+  text-align: center;
+}
 
 
 @media screen and (max-width: 680px){
@@ -399,6 +432,8 @@ body {
       display: grid;
       grid-gap: 20px;
       grid-template-columns: 1fr 1fr 1fr;
+      float: unset;
+      min-width: 80%;
       padding: 2rem;
       text-align: center;
       font-size: 14px;

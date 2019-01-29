@@ -2,7 +2,7 @@ body{
     font: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
-    background-color: rgba(178, 211, 192);
+    background: url('../img/banglogo.jpeg') no-repeat center/cover;
 }
 
 /* global */
@@ -83,168 +83,87 @@ header li:hover{
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100vh;
-    background: url('../img/banglogo.jpeg') no-repeat center/cover;
     position: relative;
     overflow-y: hidden;
     text-align: center;
 }
 
+/* form */
+.cont{
+    box-sizing: border-box;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem;
+    line-height: 1.6;
+}
 
-#showcase h1{
-    font-size: 3rem;
-    margin-bottom: 0;
+.cont ul{
+    list-style: none;
+    padding: 0;
+}
+
+.wrapper{
+    box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7)
+}
+
+.wrapper > *{
+    padding: 1rem;
+}
+
+.company-info{
+    background: #e8491d;
+    color: #eee;
+}
+
+.company-info h3, .company-info ul{
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.contact{
+    background: #eee;
     color: #e8491d;
 }
 
-#showcase h2{
-    font-size: 2rem;
-    color: #21272b;
+/* Form Styles */
+.contact form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
 }
 
-.container .lead{
-    font-size: 1.42rem;
-    color: #21272b;
+.contact form label{
+    display: block;
 }
 
-/* Playroom */
+.contact form p{
+    margin: 0;
+}
 
-.section#playroom {
-    background: url('../img/drawing.jpeg') no-repeat bottom/cover;
+.contact form .full{
+    grid-column: 1/3;
+}
+
+.contact form button, .contact form input, .contact form textarea{
+    box-sizing: border-box;
     width: 100%;
-    height: 100vh;
-    text-align: center;
-    position: relative;
-    overflow-y: hidden;
+    padding: 1rem;
+    border: 1px  solid rgba(178, 211, 192);
 }
 
-.container{
-    margin-top: 40vh;
-}
-
-.container h1{
-    font-size: 3rem;
-    margin-bottom: 0;
-    color:#e8491d;
-}
-
-.container .lead1{
-    font-size: 1.42rem;
-    color: #21272b;
-    
-}
-
-/* Buttons */
-.btn{
-  padding: 1rem;
-  color: #21272b;
-  display: inline-block;
-  background: #e8491d;
-  text-decoration: none;
-  font-size: 1.42rem;
-  border-radius: 8px;
-  
-}
-
-.btn:hover{
-    font-weight: bold;
-}
-
-/* location */
-.location{
-    text-align: center;
-    height: 10vh;
-    padding: 5px;
+.contact form button{
+    background: rgba(178, 211, 192);
+    border: 0;
+    text-transform: uppercase;
     color: #e8491d;
 }
 
-.section#map{
-    text-align: center;
-    width: 80%;
-    height: 80vh;
-    padding: auto;
-    margin: auto;
-    overflow: hidden;
-    margin-bottom: 10vh;
-}
-
-/* schedule */
-.schedule{
-    height: 37vh;
-    background-color: #35424a;
-    text-align: center;
-    position: relative;
-    overflow-y: hidden;
-}
-
-h5{
-    font-size: 3rem;
+.contact form button:hover, .contact form button:focus{
+    background: #5e94ca;
     color: rgba(178, 211, 192);
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-/* cenovnik images */
-div#quad { 
-    background-color: #000; 
-    font-size: 0; 
-    width: 90%; 
-   
-    margin: 2rem auto;
-    
-    box-shadow: 0 0 12px rgba(0,0,0,0.8);
-  }
-div#quad figure { 
-    margin: 0; 
-    padding: 0.15%;
-    width: 49.7%; 
-    
-    transition: 1s; 
-    display: inline-block; 
-    position: relative; 
-    overflow: hidden; 
-}
-div#quad figure:hover { 
-    cursor: pointer; 
-    z-index: 4; 
-}
-div#quad figure img { 
-    width: 100%; 
-    height: 50%; 
-}
-div#quad figure:nth-child(1) { 
-    transform-origin: top left; 
-}
-div#quad figure:nth-child(2) { 
-    transform-origin: top right; 
-}
-div#quad figure:nth-child(3) { 
-    transform-origin: bottom left; 
-}
-  div#quad figure:nth-child(4) { 
-    transform-origin: bottom right; 
-}
-div#quad figure figcaption { 
-    margin: 0; 
-    opacity: 0; 
-    background: rgba(0,0,0,0.3); 
-    color: #fff; 
-    padding: .3rem; 
-    font-size: 1.2rem; 
-    position: absolute; 
-    bottom: 0; 
-    width: 100%;
-    transition: 1s 1s opacity; 
-}
-.expanded { 
-      transform: scale(1.3); 
-      z-index: 5;  
-}
-div#quad figure.expanded figcaption { 
-      opacity: 1; 
-}
-div.full figure:not(.expanded) { 
-      pointer-events: none; 
+    outline: 0;
+    transition: background-color 1s ease-out;
 }
 
 /* footer */
@@ -258,12 +177,12 @@ footer .foot{
     background: #e8491d;
 }
 
-.fa{
+footer .fa{
     padding: 15px;
     font-size: 25px;
     color: rgba(178, 211, 192);
 }
-.fa:hover{
+footer .fa:hover{
     color: #21272b;
     text-decoration: none;
 }
@@ -284,7 +203,21 @@ h4{
     text-align: center;
 }
 
+/* Large Screens */
+@media(min-width:700px){
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    
+    .wrapper > *{
+        padding: 2em;
+    }
 
+    .company-info h3, .company-info ul, .brand{
+        text-align: left;
+    }
+}
 
 @media screen and (max-width: 680px){
     .container{
